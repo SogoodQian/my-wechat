@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>微信</title>
 
     <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 </head>
+
 <body>
-    
+    <div id="app">
+        <transition :name="slideName">
+            <router-view></router-view>
+        </transition>
+    </div>
 </body>
+<script src="js/index.js" type="module"></script>
 </html>
