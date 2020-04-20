@@ -152,16 +152,3 @@ html, body, #app{
     color: #999;
     margin-left: 10px;
 }
-
-.slide-left-enter{
-    transform: translateX(100%);
-}
-
-.slide-left-enter-active,.slide-left-leave-active{
-    position: absolute;
-    transition: all 0.3s;
-}
-
-.slide-left-leave-to{
-    transform: translateX(-100%);
-}
